@@ -98,7 +98,7 @@ a {
 .contact {
   color: #434455;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -120,7 +120,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -132,7 +132,7 @@ a {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/people-office-mob2x.jpg);
   }
 }
 .title {
@@ -231,7 +231,6 @@ a {
   padding: 96px 0;
 }
 .container-team {
-  padding: 0 28px;
 }
 .team-list {
 }
@@ -364,6 +363,7 @@ a {
 }
 .footer-container {
   text-align: center;
+  margin-bottom: 72px;
 }
 .container-footer {
   justify-content: center;
@@ -390,11 +390,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 288px;
-  margin-bottom: 72px;
   text-align: start;
 }
 .footer-box {
   text-align: center;
+  margin-bottom: 72px;
 }
 .footer-title-link {
   color: #ffffff;
@@ -411,7 +411,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 .footer-box-icon {
   background-color: #4d5ae5;
@@ -694,7 +693,65 @@ a {
 .modal-button:hover {
   background-color: #404bbf;
 }
-
+.menu-box {
+  padding: 72px 16px 40px 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 320px;
+  min-height: 640px;
+  background-color: #fcfcfc;
+}
+.menu-list {
+  margin-bottom: 168px;
+}
+.adress-item {
+  margin-bottom: 24px;
+}
+.adress-item:last-child {
+  margin-bottom: 0;
+}
+.menu-adress {
+  margin-bottom: 48px;
+}
+.menu-tel-style {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+.menu-email-style {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  color: #434455;
+}
+.menu-item {
+  margin-bottom: 80px;
+}
+.menu-item:last-child {
+  margin-bottom: 0;
+}
+.menu-studio {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #2e2f42;
+}
+.blue-studio {
+  color: #404bbf;
+}
+.menu-box-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
 /*! ------------------------------ */
 @media screen and (min-width: 768px) {
   .container {
@@ -740,12 +797,34 @@ a {
   .address {
     display: block;
   }
+  .list {
+    display: block;
+    gap: 12px;
+  }
   .open-menu {
     display: none;
   }
   /* section 1 */
   .section-one {
     max-width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba{46,
+          47,
+          66,
+          0.7}
+        ),
+        url(../images/people-office-tab2x.jpg);
+    }
   }
   .title {
     max-width: 496px;
@@ -769,11 +848,10 @@ a {
   .text-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
   /* section3 */
   .container-team {
-    padding: 0 108px;
   }
   .team-list {
     display: flex;
@@ -789,16 +867,18 @@ a {
   .product-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 12px;
+    gap: 72px 24px;
     justify-content: center;
     align-items: center;
   }
   .product-item {
     margin-bottom: 0;
+    width: 356px;
   }
   /* footer */
   .footer-container {
     text-align: start;
+    margin-bottom: 0;
   }
   .footer-text {
     width: 264px;
@@ -811,6 +891,7 @@ a {
   }
   .footer-box {
     text-align: start;
+    margin-bottom: 0;
   }
   .email-box {
     text-align: start;
@@ -848,6 +929,20 @@ a {
   .section-one {
     max-width: 1440px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpeg);
+  }
+  @media (min-resolution: 196dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office2x.jpeg);
+    }
   }
   .title {
     margin-bottom: 48px;
